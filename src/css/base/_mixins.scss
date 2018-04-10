@@ -1,0 +1,144 @@
+@mixin keyframes($name){
+	@-webkit-keyframes #{$name}{
+		@content;
+	}
+	@-moz-keyframes #{$name}{
+		@content;
+	}
+	@-ms-keyframes #{$name}{
+		@content;
+	}
+	@-o-keyframes #{$name}{
+		@content;
+	}
+	@keyframes #{$name}{
+		@content;
+	}
+}
+		
+@mixin border-radius($radius){
+	-webkit-border-radius:	$radius;
+	-moz-border-radius:		$radius;
+	-ms-border-radius:		$radius;
+	-o-border-radius:		$radius;
+	border-radius:			$radius;
+}
+
+@mixin border-box($borderbox){
+	-webkit-border-box:	$borderbox;
+	-moz-border-box:	$borderbox;
+	-ms-border-box:		$borderbox;
+	-o-border-box:		$borderbox;
+	border-box:			$borderbox;
+}
+
+@mixin text-size-adjust($textsizeadjust){
+	-webkit-text-size-adjust:	$textsizeadjust;
+	-moz-text-size-adjust:		$textsizeadjust;
+	-ms-text-size-adjust:		$textsizeadjust;
+	-o-text-size-adjust:		$textsizeadjust;
+	text-size-adjust:			$textsizeadjust;
+}
+
+@mixin tap-highlight-color($taphighlightcolor){
+	-webkit-tap-highlight-color:	$taphighlightcolor;
+	-moz-tap-highlight-color:		$taphighlightcolor;
+	-ms-tap-highlight-color:		$taphighlightcolor;
+	-o-tap-highlight-color:			$taphighlightcolor;
+	tap-highlight-color:			$taphighlightcolor;
+}
+	
+@mixin border-bottom-radius($radius){
+	-webkit-border-bottom-right-radius:	$radius;
+	-webkit-border-bottom-left-radius:	$radius;
+	-moz-border-bottom-right-radius:	$radius;
+	-moz-border-bottom-left-radius:		$radius;
+	-ms-border-bottom-right-radius:		$radius;
+	-ms-border-bottom-left-radius:		$radius;
+	-o-border-bottom-right-radius:		$radius;
+	-o-border-bottom-left-radius:		$radius;
+	border-bottom-right-radius:			$radius;
+	border-bottom-left-radius:			$radius;
+}
+
+@mixin border-left-radius($radius){
+	-webkit-border-top-left-radius:		$radius;
+	-webkit-border-bottom-left-radius:	$radius;
+	-moz-border-top-left-radius:		$radius;
+	-moz-border-bottom-left-radius:		$radius;
+	-ms-border-top-left-radius:			$radius;
+	-ms-border-bottom-left-radius:		$radius;
+	-o-border-top-left-radius:			$radius;
+	-o-border-bottom-left-radius:		$radius;
+	border-top-left-radius:				$radius;
+	border-bottom-left-radius:			$radius;
+}
+
+@mixin border-right-radius($radius){
+	-webkit-border-top-right-radius:	$radius;
+	-webkit-border-bottom-right-radius:	$radius;
+	-moz-border-top-right-radius:		$radius;
+	-moz-border-bottom-right-radius:	$radius;
+	-ms-border-top-right-radius:		$radius;
+	-ms-border-bottom-right-radius:		$radius;
+	-o-border-top-right-radius:			$radius;
+	-o-border-bottom-right-radius:		$radius;
+	border-top-right-radius:			$radius;
+	border-bottom-right-radius:			$radius;
+}
+
+@mixin animation-timing-function($animationtiming){
+	-webkit-animation-timing-function:	$animationtiming;
+	-moz-animation-timing-function:		$animationtiming;
+	-ms-animation-timing-function:		$animationtiming;
+	-o-animation-timing-function:		$animationtiming;
+	animation-timing-function:			$animationtiming;
+}
+	
+@mixin animation-name($animationname){
+	-webkit-animation-name:	$animationname;
+	-moz-animation-name:	$animationname;
+	-ms-animation-name:		$animationname;
+	-o-animation-name:		$animationname;
+	animation-name:			$animationname;
+}
+
+@mixin user-drag($userdrag){
+	-webkit-user-drag:	$userdrag;
+	-moz-user-drag:		$userdrag;
+	-ms-user-drag:		$userdrag;
+	-o-user-drag:		$userdrag;
+	user-drag:			$userdrag;
+}
+
+@mixin user-select($userselect){
+	-webkit-user-select:	$userselect;
+	-moz-user-select:		$userselect;
+	-ms-user-select:		$userselect;
+	-o-user-select:			$userselect;
+	user-select:			$userselect;
+}
+
+@mixin transition($transition...){
+	-webkit-transition:		$transition;
+	-moz-transition:		$transition;
+	-ms-transition:			$transition;
+	-o-transition:			$transition;
+	transition:				$transition;
+}
+
+@mixin transform($transform){
+	-webkit-transform:		$transform;
+	-moz-transform:			$transform;
+	-o-transform:			$transform;
+	-ms-transform:			$transform;
+	transform:				$transform;
+}
+
+@mixin animation($animation){
+	-webkit-animation:		$animation;
+	-moz-animation:			$animation;
+	-o-animation:			$animation;
+	-ms-animation:			$animation;
+	animation:				$animation;
+}

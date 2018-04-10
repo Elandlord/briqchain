@@ -1,0 +1,32 @@
+node_modules/
+vendor/
+config.php
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+composer.phar
+phinx.yml
+templates/cache/*
+static/css/*
+static/js/*
+static/qrcode/*
+static/icons/46x46/*
+static/icons/80x80/*
+static/icons/100x100/*
+static/icons/116x116/*
+static/icons/200x200/*
+!templates/cache/.gitkeep
+!static/css/.gitkeep
+!static/js/.gitkeep
+!static/qrcode/.gitkeep

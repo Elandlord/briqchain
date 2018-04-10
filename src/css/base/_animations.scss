@@ -1,0 +1,110 @@
+@include keyframes(float){
+	0%{
+		
+		@include transform(translate(0, 2px));
+	}
+	5%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 1;
+	}
+	95%{
+		opacity: 0;
+	}
+	100%{
+		@include transform(translate(0, -12px));
+	}
+}
+
+@include keyframes(blink){
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.7;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+@include keyframes(signal){
+	0%{
+		opacity: 0.4;
+		@include transform(scale(0.2));
+	}
+	50%{
+		opacity: 0.4;
+		@include transform(scale(0.4));
+	}
+	100%{
+		opacity: 0;
+		@include transform(scale(1));
+	}
+}
+
+@include keyframes(pulsate){
+	0%{
+		opacity: 0;
+		@include transform(scale(0.1));
+	}
+	25%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+		@include transform(scale(1));
+	}
+	100%{
+		opacity: 0;
+		@include transform(scale(1));
+	}
+}
+
+
+@include keyframes(depositArrow){
+	0%{
+		@include transform(translate(0, 0));
+	}
+	50%{
+		@include transform(translate(0, -3px));
+	}
+	100%{
+		@include transform(translate(0, 0));
+	}
+}
+
+@include keyframes(exchangeArrowLeft){
+	0%{
+		@include transform(translate(0, 0));
+	}
+	25%{
+		@include transform(translate(3px, 0));
+	}
+	50%{
+		@include transform(translate(0, 0));
+	}
+	100%{
+		@include transform(translate(0, 0));
+	}
+}
+
+@include keyframes(exchangeArrowRight){
+	0%{
+		@include transform(translate(0, 0));
+	}
+	50%{
+		@include transform(translate(0, 0));
+	}
+	75%{
+		@include transform(translate(-3px, 0));
+	}
+	100%{
+		@include transform(translate(0, 0));
+	}
+}
