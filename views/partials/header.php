@@ -39,6 +39,9 @@
 					<li class="navigation__item">
 						<a class="navigation__link" href="<?php echo $this->url ?>/about">About</a>
 					</li>
+					<li class="navigation__item">
+						<a class="navigation__link" href="#woningportaal">Woningen</a>
+					</li>
 				</ul>
 				
 				<div class="header__call-to-action">
