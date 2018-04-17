@@ -12,7 +12,7 @@
 					<div class="last-action__block">
 						<div class="last-action__badge">
 							<span class="last-action__badge-title">Aanvang</span>
-							<span class="last-action__badge-content">Q1 2018</span>
+							<span class="last-action__badge-content">Q2 2018</span>
 						</div>
 						<span class="last-action__label">Voorinschrijving</span>
 						<h2 class="last-action__title"><?php echo $this->siteWide->getText('site_breed.aanmelden_titel'); ?></h2>
