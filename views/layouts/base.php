@@ -45,6 +45,111 @@
 			}	
 		}
 
+		/* calculator */
+		.calculator__input-radio-holder {
+			padding-right: 25px;
+		}
+
+		.calculator__input-radio-holder input[type="radio"] {
+			position: absolute;
+			opacity: 0;
+		}
+
+		/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.calculator__input-icon-rente {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-top: 1px solid #c2d8eb;
+	border-bottom: 1px solid #c2d8eb;
+	border-left: 1px solid #c2d8eb;
+	width: 44px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-weight: bold;
+	color: #05a85d;
+}
+
+
+.m-bottom-md{
+	margin-bottom: 10px;
+}
+
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #EBF4FB;
+  box-shadow: 0px 1px 2px 1px rgba(29, 96, 65, 0.15);
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #3A395B;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+
+.calculator__bullets li {
+	font-size: 13px !important;
+}
+
+.calculator__form {
+	border-spacing: 30px 20px !important;
+
+}
 
 	</style>
 </head>
