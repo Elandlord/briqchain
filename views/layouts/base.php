@@ -20,6 +20,33 @@
 	<meta name="MobileOptimized" content="width">
 	<meta name="format-detection" content="telephone=no">
 	<meta property="og:image" content="<?php echo $this->url ?>/static/img/facebook_preview.png"> 
+	<style>
+		#horizontalmenu li ul {
+			display: none;
+			position: absolute;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 5px 8px 35px 2.8px rgba(43, 106, 130, 0.16);
+			padding-left: 10px;
+		}
+		
+		#horizontalmenu li ul li a {
+			color: #36349F !important;
+		}
+
+		#horizontalmenu li ul li {
+			display: block;
+			
+		}
+
+		@media screen and (max-width: 1001px) { 
+			#horizontalmenu li ul {
+				padding: 40px;
+			}	
+		}
+
+
+	</style>
 </head>
 <body<?php if($this->lightBlue === true): ?> class="body--light-blue"<?php endif; ?>>
 	<?php echo $this->yieldView(); ?>
@@ -54,6 +81,60 @@
 	s0.parentNode.insertBefore(s1,s0);
 	})();
 	</script>
+
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	crossorigin="anonymous"></script>
+
+	<script>
+
+		let windowHeight = $( window ).width();
+		let targetLink = $('#targetLink');
+		let dropdown = $('#dropdown');
+
+		if(windowHeight > 1001) {
+
+			targetLink.on('mouseenter', function() {
+				dropdown.show();
+			});
+
+			targetLink.on('mouseleave', function(event) {
+				if(dropdown.is(':hover')) {
+
+				}else {
+					dropdown.hide();
+				}
+			});
+			
+			setInterval(() => {
+				if(dropdown.is(':hover') || targetLink.is(':hover')) {
+
+				}else {
+					dropdown.hide();
+				}
+			}, 1);
+
+		} else {
+			targetLink.on('click', function() {
+				if(dropdown.is(':visible')) {
+					dropdown.hide()
+				} else {
+					dropdown.show();
+				}
+			});
+
+			$("body").click(function(e) {
+				if(e.target.id !== "targetLink" && e.target.id !== "dropdown") {
+					dropdown.hide();
+				}
+			});
+
+
+		}
+
+	</script>
+
 	<!--End of Tawk.to Script-->
 </body>
 </html>

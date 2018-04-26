@@ -27,21 +27,37 @@
 				</label>
 				
 				<ul class="navigation">
-					<li class="navigation__item">
-						<a class="navigation__link" href="<?php echo $this->url ?>/">Home</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="<?php echo $this->url ?>/fondsen">Briq Fonds</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="<?php echo $this->url ?>/zo-werkt-het">Zo werkt het</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="<?php echo $this->url ?>/about">About</a>
-					</li>
-					<li class="navigation__item">
-						<a class="navigation__link" href="#woningportaal">Woningen</a>
-					</li>
+					<div id="horizontalmenu">
+						<li class="navigation__item">
+							<a class="navigation__link" href="<?php echo $this->url ?>/">Home</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="<?php echo $this->url ?>/fondsen">Briq Fonds</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="<?php echo $this->url ?>/zo-werkt-het">Zo werkt het</a>
+						</li>
+						<li class="navigation__item">
+							<a class="navigation__link" href="<?php echo $this->url ?>/about">About</a>
+						</li>
+						<li class="navigation__item">
+							<a id="targetLink" class="navigation__link" href="#woningportaal">Woningen</a>
+							<ul id="dropdown">
+								<li class="navigation__item">
+									<a class="navigation__link" href="http://briqchain.vindbaar-in-online.nl/aanbod.html">Aanbod</a>
+								</li>
+								<li class="navigation__item">
+									<a class="navigation__link" href="http://briqchain.vindbaar-in-online.nl/huren-of-kopen.html">Huren of Kopen</a>
+								</li>
+								<li class="navigation__item">
+									<a class="navigation__link" href="http://briqchain.vindbaar-in-online.nl/inschrijven.php">Inschrijven</a>
+								</li>
+								<li class="navigation__item">
+									<a class="navigation__link" href="http://briqchain.vindbaar-in-online.nl/woning-verkopen.html">Woning verkopen</a>
+								</li>
+							</ul>
+						</li>
+					</div>
 				</ul>
 				
 				<div class="header__call-to-action">
