@@ -16,11 +16,11 @@
 				</div>
 			</div>
 
-			<div class="calculator__form-wrapper">
-				<div class="calculator__form">
+			<div class="calculator__form-wrapper calculator__herinleg">
+				<div class="calculator__form ">
 
 					<!-- herinleg -->
-					<div class="m-bottom-md">
+					<div class="">
 						<label class="calculator__form-label m-bottom-md" for="calculator_inleg_in_euros">Eenmalig / maandelijks</label>
 						<div class="calculator__input-holder">
 							<div class="calculator__input-radio-holder">
@@ -39,25 +39,7 @@
 						</div>
 					</div>
 
-					<!-- herbeleggen -->
-					<div class="">
-					<label class="calculator__form-label m-bottom-md" for="calculator_inleg_in_euros">Herbeleggen</label>
-						<div class="calculator__input-holder">
-							<div class="calculator__input-radio-holder">
-								<label class="container"> Aan
-									<input required="required" name="calculator_herbeleggen" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-
-							<div class="calculator__input-radio-holder">
-								<label class="container"> Uit
-									<input required="required" name="calculator_herbeleggen" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-						</div>
-					</div>
+					
 
 				</div>
 			</div>
@@ -77,27 +59,6 @@
 						</div>
 					</div>
 
-					<!-- Aantal briqs -->
-					<div class="calculator__form-group">
-						<label class="calculator__form-label" for="calculator_aantal_briqs">Aantal briqs</label>
-						<div class="calculator__input-holder">
-							<div class="calculator__input-icon">
-								<img class="calculator__input-img" src="<?php echo $this->url ?>/static/img/input-logo.svg" width="19" height="20" alt="Briqs">
-							</div>
-							<input class="calculator__form-input" type="number" id="calculator_aantal_briqs" name="calculator_aantal_briqs" required="required" value="10" step="1" min="1">
-						</div>
-					</div>
-
-					<!-- Rente per maand -->
-					<div class="calculator__form-group">
-						<label class="calculator__form-label" for="calculator_inleg_in_euros">Rente per maand</label>
-						<div class="calculator__input-holder">
-							<div class="calculator__input-icon-rente">
-								<span>%</span>
-							</div>
-							<input class="calculator__form-input" type="number" id="calculator_rente_per_maand" name="calculator_rente_per_maand" required="required" value="100" step="10" min="10">
-						</div>
-					</div>
 
 					<!-- Rente per jaar -->
 					<div class="calculator__form-group">
@@ -112,64 +73,6 @@
 
 				</div>
 			</div>
-
-			<div class="calculator__form-wrapper">
-				<div class="calculator__form">
-
-					<!-- Rente per jaar -->
-					<div class="">
-						<label class="calculator__form-label" for="calculator_inleg_in_euros">Rendement na aantal jaar</label>
-						<div class="calculator__input-holder">
-							<div class="calculator__input-radio-holder">
-								<label class="container"> 5
-									<input required="required" name="rendement" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-
-							<div class="calculator__input-radio-holder">
-								<label class="container"> 10
-									<input required="required" name="rendement" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-
-							<div class="calculator__input-radio-holder">
-								<label class="container"> 15
-									<input required="required" name="rendement" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-
-							<div class="calculator__input-radio-holder">
-								<label class="container"> 20
-									<input required="required" name="rendement" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-
-							<div class="calculator__input-radio-holder">
-								<label class="container"> 25
-									<input required="required" name="rendement" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-
-							<div class="calculator__input-radio-holder">
-								<label class="container"> 30
-									<input required="required" name="rendement" type="radio">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-
 
 			<div class="calculator__results">
 				<div class="calculator__result calculator__result--first">
@@ -187,16 +90,44 @@
 					</div>
 				</div>
 				<div class="calculator__result calculator__result--last">
-					<div class="calculator__result-label">Rendement 5 jaar*</div>
+					<div class="calculator__result-label">Rendement 5 jaar* 
+						<img class="calculator__dropdown__link"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAA4VBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+sqgLzAAAASnRSTlMAAQIDBAYHCQ0OEBESFBUWFxgaHCIlJiowMTU2ODlHSUtMTVteY2tsb3F0dXd8iYuSlJq1t7m8w8fIyszOz9fi5Obt7/P19/n7/X3aZyAAAANjSURBVBgZ7cGHYlVVFATQSQgRBcGNBVFULKAmg2LDFlTCWDL//0ECKhJ4SV655ZS9FlJKKaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaXUpK3LNz7+dK9tn9/64M3zWOjVO7+7E9+9t4XnvfS1e/LrdRz3zh/uzFfn8Ixb7s9Pu3jqtnv0y3n863336fstPHH5yJ26gyd+cLdexyPvul/38MjP7thV4JJ7RuBD9+w34K67tosDdy3w0F17C3+5a9fwwF17A9+6axdBd20b192ze8DOkTt2E8CX7tfRLoCL7tceHtt3rw538Nj2fXfqGv7x8qG79An+c0Xu0D7+F3J3iGeF3BniuJC7Qjwv5I4QLwq5G8QiIXeCWCzkLhAnCbkDxMlCbh5xmpAbR5wu5KYRZwm5YcTZQm4WsYyQG0UsJ+QmEcsKuUHE8kJuDrGKkBtDrCbkphCrCrkhxOpCbgaxjpAbQawn5CYQ6wq5AcT6Qq4esYmQK0dsJuSqEZsKuWLE5kKuFjGEkCtFDCPkKhFDCblCxHBCrg4xpJArQwwr5KoQQwu5IsTwQq4GMYaQK0GMI+QqEGMJuQLEeEIuHjGmkAtHjCvkohFjC7lgxPhCLhYxhZALRUwj5CIRUwm5QMR0Qi4OMaWQC0NMK+SiEFMLuSDE9EIuBjGHkAtBzCPkIhBzCbkAxHxCnh0xp5BnRswr5FkRcwt5RsT8Qp4NUYKQZ0KUIeRZEKUIeQZEOUKeHFGSkCdGlCXkSRGlCXlCRHlCngxRopAnQpQp5EkQpQp5AkS5Qh4dUbKQR0aULeRREaULeURE+UIeDVGDkEdC1CHkURC1CHkERD1CHhxRk5AHRtQl5EERtQl5QER9Qh4MUaOQB0LUKeRBELUKeQBEvULeGFGzkDdE1C3kjRC1C3kDRP1CXhvRgpDXRLQh5LUQrQh5DUQ7Ql4Z0ZKQV0S0JeSVEK0JeQVEe0JeGtGikJdEtCnkpRCtCnkJRLtCPhPRspDPQLQt5FMRrQv5FET7Qj4R0YOQT0D0IeSFiF5cOfQCn6EfF+77BTfRk+09H/fja+jMK18c+amDG+jQztv73zz48+HB3Y8uIaWUUkoppZRSSimllFJKKaWUUkoppZRSSimllFJKKaWUUkppc38Dkv+iItb6i+YAAAAASUVORK5CYII=">
+						<div class="calculator__rendement__dropdown">
+							<a class="calculator__rendement__dropdown-link" href="#"> 5 jaar </a>
+							<a class="calculator__rendement__dropdown-link" href="#"> 10 jaar </a>
+							<a class="calculator__rendement__dropdown-link" href="#"> 15 jaar </a>
+							<a class="calculator__rendement__dropdown-link" href="#"> 20 jaar </a>
+							<a class="calculator__rendement__dropdown-link" href="#"> 25 jaar </a>
+							<a class="calculator__rendement__dropdown-link" href="#"> 30 jaar </a>
+						</div>
+					</div>
 					<div class="calculator__result-value">
 						<span class="calculator__result-sign">€</span>
 						<span class="calculator__result-amount calculator__result-amount--light" id="calculator_per_vijf_paar">23,-</span>
 					</div>
 				</div>
 			</div>
-			<div class="calculator__extra-note">
-				Inclusief bonus van <strong>3%</strong> bij aflossing.
+
+			<!-- herbeleggen -->
+			<div style="margin-top: 30px;" class="">
+				<label class="calculator__form-label m-top-md m-bottom-md" for="calculator_inleg_in_euros">Herbeleggen</label>
+				<div class="calculator__input-holder ">
+					<div class="calculator__input-radio-holder">
+						<label class="container"> Aan
+							<input required="required" name="calculator_herbeleggen" type="radio">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="calculator__input-radio-holder">
+						<label class="container"> Uit
+							<input required="required" name="calculator_herbeleggen" type="radio">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
 			</div>
+
 			<div class="calculator__footer">
 				<ul class="calculator__bullets">
 					<li>Exclusief eventuele <a href="<?php echo $this->url ?>/zo-werkt-het">emissie/transactie kosten</a>.</li>

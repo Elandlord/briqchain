@@ -21,6 +21,11 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta property="og:image" content="<?php echo $this->url ?>/static/img/facebook_preview.png"> 
 	<style>
+
+		.block {
+			display: block;
+		}
+
 		#horizontalmenu li ul {
 			display: none;
 			position: absolute;
@@ -53,103 +58,153 @@
 		.calculator__input-radio-holder input[type="radio"] {
 			position: absolute;
 			opacity: 0;
+			
 		}
 
 		/* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+		.container {
+		display: block;
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		}
 
-.calculator__input-icon-rente {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	border-top-left-radius: 4px;
-	border-bottom-left-radius: 4px;
-	border-top: 1px solid #c2d8eb;
-	border-bottom: 1px solid #c2d8eb;
-	border-left: 1px solid #c2d8eb;
-	width: 44px;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	font-weight: bold;
-	color: #05a85d;
-}
-
-
-.m-bottom-md{
-	margin-bottom: 10px;
-}
+		.calculator__input-icon-rente {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-top: 1px solid #c2d8eb;
+			border-bottom: 1px solid #c2d8eb;
+			border-left: 1px solid #c2d8eb;
+			width: 44px;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+			font-weight: bold;
+			color: #05a85d;
+		}
 
 
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-}
+		.m-bottom-md{
+			margin-bottom: 10px;
+		}
 
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #EBF4FB;
-  box-shadow: 0px 1px 2px 1px rgba(29, 96, 65, 0.15);
-  border-radius: 5px;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #3A395B;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  top: 0px;
-  left: 0px;
-  width: 0px;
-  height: 0px;
-  background: transparent;
-}
+		.m-top-md {
+			margin-top: 10px;
+		}
 
 
-.calculator__bullets li {
-	font-size: 13px !important;
-}
+		/* Hide the browser's default radio button */
+		.container input {
+		position: absolute;
+		opacity: 0;
+		}
 
-.calculator__form {
-	border-spacing: 30px 20px !important;
+		/* Create a custom radio button */
+		.checkmark {
+		position: absolute;
+		top: 0px;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		background-color: #EBF4FB;
+		box-shadow: 0px 1px 2px 1px rgba(29, 96, 65, 0.15);
+		border-radius: 5px;
+		}
 
-}
+		/* On mouse-over, add a grey background color */
+		.container:hover input ~ .checkmark {
+		background-color: #ccc;
+		}
+
+		/* When the radio button is checked, add a blue background */
+		.container input:checked ~ .checkmark {
+		background-color: #3A395B;
+		}
+
+		/* Create the indicator (the dot/circle - hidden when not checked) */
+		.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+		}
+
+		/* Show the indicator (dot/circle) when checked */
+		.container input:checked ~ .checkmark:after {
+		display: block;
+		}
+
+		/* Style the indicator (dot/circle) */
+		.container .checkmark:after {
+		top: 0px;
+		left: 0px;
+		width: 0px;
+		height: 0px;
+		background: transparent;
+		}
+
+
+		.calculator__bullets li {
+			font-size: 13px !important;
+		}
+
+		.calculator__form {
+			border-spacing: 30px 20px !important;
+		}
+
+		.calculator__dropdown__link {
+			width: 10px; 
+			cursor: pointer;
+		}
+
+		.calculator__result-label {
+			position: relative;
+		}
+
+		.calculator__rendement__dropdown {
+			position: absolute;
+			top: 25px;
+			width: 180px;
+			min-height: 200px;
+			background: #EBF4FB;
+			box-shadow: 0px 5px 15px 2px rgba(29, 96, 65, 0.15);	
+			border-radius: 5px;
+		}
+
+		.calculator__rendement__dropdown-link {
+			display: block;
+			padding: 10px 10px;
+			text-decoration: none;
+			color: #3A395B;
+			text-align: center;
+			border-bottom: 1px solid #FFFFFF;
+		}
+		
+		.calculator__rendement__dropdown-link:first-of-type {
+			padding-top: 12px;
+		}
+
+		.calculator__rendement__dropdown-link:last-of-type {
+			border-bottom: none;
+		}
+
+		.calculator__rendement__dropdown-link:hover {
+			background-color: #3A395B;
+			color: white;
+		}
+
+		.calculator__herinleg{
+			position: relative;
+			top: 35px;
+		}
 
 	</style>
 </head>
